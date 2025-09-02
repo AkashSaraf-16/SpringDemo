@@ -4,7 +4,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien" class="org.akash.Alien">
-        <property name="age" value="27"/>
+        <constructor-arg name="age" value="24"/>
+        <constructor-arg name="lap" ref="lap"/>
     </bean>
     <bean id="lap" class="org.akash.Laptop"/>
 
