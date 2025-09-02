@@ -11,7 +11,7 @@
 <!--        <property name="com" ref="desk"/>-->
     </bean>
     <bean id="com" class="org.akash.Laptop"/>
-    <bean id="desk" class="org.akash.Desktop" scope="prototype"/>
+    <bean id="desk" class="org.akash.Desktop" lazy-init="true"/>
 
 </beans>
 
